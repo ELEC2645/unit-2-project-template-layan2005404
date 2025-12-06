@@ -110,7 +110,7 @@ static void print_main_menu(void)
     printf("\t2. Series / parallel resistors\n");
     printf("\t3. Ohm's law and power\n");
     printf("\t4. PWM duty cycle calculator\n");
-    printf("\t5. DC-DC Converter Design Assistant\n");
+    printf("\t5. DC DC Converter Design Assistant\n");
     printf("\t6. Signal Generator\n");
     printf("\t7. Exit\n\n");
     printf("---------------------------------\n");

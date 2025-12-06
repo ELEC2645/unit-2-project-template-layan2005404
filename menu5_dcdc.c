@@ -18,10 +18,10 @@ static void draw_boost_diagram(void);
 void menu_item_5(void)
 {
     int choice = 0;
-    print_header("DC-DC Converter Design Assistant");
+    print_header("DC DC Converter Design Assistant");
     printf("1. Buck Converter Design Helper\n");
     printf("2. Boost Converter Design Helper\n");
-    printf("3. Inductor Ripple & CCM Check\n");
+    printf("3. Inductor Ripple and CCM Check\n");
     printf("4. Back to Main Menu\n");
 
     // this loop keeps asking until the user enters a number from 1-4
@@ -121,7 +121,7 @@ static void boost_design_helper(void)
 
     // a boost converter must have Vout greater than Vin 
     if (Vout <= Vin) {
-        printf("Error: Boost converter requires Vout > Vin.\n");
+        printf("Error: boost converter requires Vout > Vin.\n");
         return;
     }
     // Duty cycle formula for boost 
@@ -145,13 +145,13 @@ static void boost_design_helper(void)
 // ripple calculations & CCM Check
 static void ripple_and_ccm_check(void)
 {
-    print_header("Inductor Ripple & CCM Check");
+    print_header("Inductor Ripple and CCM Check");
 
     // user selects converter type 
     printf("Select converter type:\n");
     printf("1. Buck\n");
     printf("2. Boost\n");
-    printf("3. Buck-Boost\n");
+    printf("3. Buck Boost\n");
     int type = 0;
     do {
         type = read_int("Enter choice (1-3): ");

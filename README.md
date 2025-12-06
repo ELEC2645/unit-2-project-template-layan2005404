@@ -6,7 +6,7 @@ Welcome to Layan's Engineering Lab, the pinkest command line engineering toolkit
 
 This project starts as a simple resistor calculator then mutated into a power electronics design assistant, a full waveform generator including ASCII oscilloscope and an Ohm's law tool, featuring a pink start up screen. 
 
-## Menu 1 : Resitor Colour Code Calculator 
+## Menu 1 : Resistor Colour Code Calculator 
 - Enter 3 or 4 colour bands
 - Calculates Resistance and Tolerance 
 

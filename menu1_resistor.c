@@ -24,10 +24,10 @@ static void read_word(const char *prompt, char *buffer, size_t size);
 // this menu runs when user select resistor colour code calculator 
 void menu_item_1(void)
 {
-    print_header("Resistor Colour code Calculator");
+    print_header("Resistor colour code calculator");
 
 // As recommended by Professor James, an ASCII resistor graphic is shown here to improve
-// the visual flow before the user proceeds to the colour-code menu.
+// the visual flow before the user proceeds to the colour code menu.
 // I have used Folge Free Tools to convert an image of a resistor into ASCII
 // Cited in the Personal Journal Entry Seven 
     printf("\n");
@@ -80,7 +80,7 @@ printf("\n");
     // if user writes "RED", it will be changed to "red"
     read_word("First band colour: ", c1, sizeof(c1));
     read_word("Second band colour: ", c2, sizeof(c2));
-    read_word("Multiplier band colour: ", c3, sizeof(c3));
+    read_word("Multiplier/Third band colour: ", c3, sizeof(c3));
 
     // convert colours into actual numbers 
     int d1 = colour_to_digit(c1);
@@ -194,3 +194,5 @@ static double colour_to_tolerance(const char *colour)
     if (strcmp(colour, "silver") == 0) return 10.0;
     return -1.0;  // unknown
 }
+//resistor colour codes taken from EE Power
+//found and cited in Entry Seven 

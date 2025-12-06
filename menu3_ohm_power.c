@@ -99,25 +99,25 @@ static void suggest_device(double P)
     printf("--------------------------------------------------\n");
 
     if (P < 0.1)
-        printf("• Very tiny power: sensors, LEDs, or small logic circuits.\n");
+        printf("- Very tiny power: sensors, LEDs, or small logic circuits.\n");
 
     else if (P < 1)
-        printf("• Enough for microcontrollers, LCD modules and tiny radios.\n");
+        printf("- Enough for microcontrollers, LCD modules and tiny radios.\n");
 
     else if (P < 5)
-        printf("• USB gadgets, LED strips, small cooling fans, etc.\n");
+        printf("- USB gadgets, LED strips, small cooling fans, etc.\n");
 
     else if (P < 20)
-        printf("• Can run routers, small DC motors, or portable speakers.\n");
+        printf("- Can run routers, small DC motors, or portable speakers.\n");
 
     else if (P < 60)
-        printf("• Light bulbs, laptop chargers, or medium motors.\n");
+        printf("- Light bulbs, laptop chargers, or medium motors.\n");
 
     else if (P < 200)
-        printf("• Desktop PCs, monitors, printers, strong lights.\n");
+        printf("- Desktop PCs, monitors, printers, strong lights.\n");
 
     else if (P < 1000)
-        printf("• Power tools, heaters, kettles, hair dryers.\n");
+        printf("- Power tools, heaters, kettles, hair dryers.\n");
 
     else
         printf("• Industrial territory: welders, ovens, big motors.\n");

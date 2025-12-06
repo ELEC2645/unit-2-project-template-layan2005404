@@ -5,7 +5,7 @@
 // cleaning up text input
 // waiting for the user 
 // printing appropriate headers
-// this makes my menu cleaner and prevent crashing 
+// this makes my menu cleaner and prevents crashing 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -41,7 +41,7 @@ int read_int(const char *prompt)
         while (*p == ' ' || *p == '\t') {
             p++;   
         }
-        // check for empty input and if the user typed nothing, it will ask again 
+        // check for empty input and if the user typed nothing, it will ask againn
         if (*p == '\0') {
             printf("Please enter a value.\n");
             continue;

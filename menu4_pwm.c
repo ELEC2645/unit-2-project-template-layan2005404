@@ -19,8 +19,8 @@ void menu_item_4(void)
 
     // asks the user to pick a converter
     printf("Select converter type:\n");
-    printf("1. Buck (step-down)\n");
-    printf("2. Boost (step-up)\n");
+    printf("1. Buck (step down)\n");
+    printf("2. Boost (step up)\n");
     printf("3. Inverting buck-boost\n");
     int type;
 
@@ -77,7 +77,7 @@ void menu_item_4(void)
     }
 
     // prints final duty cycle calculation
-    printf("\nCalculated duty cycle D = %.4f  (%.2f%%)\n",
+    printf("\ncalculated duty cycle D = %.4f  (%.2f%%)\n",
            D, D * 100.0);
 
     // warn if duty cycle result is physically impossible
@@ -86,6 +86,6 @@ void menu_item_4(void)
     // Vin and Vout are unrealistic
     if (D < 0.0 || D > 1.0) {
         printf("Warning: This D value is outside the valid 0-1 range.\n");
-        printf("Check your Vin and Vout — they may not match this converter.\n");
+        printf("Check your Vin and Vout, they may not match this converter.\n");
     }
 }
